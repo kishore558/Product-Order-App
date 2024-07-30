@@ -1,0 +1,11 @@
+<div>
+    <label for="product">Product Name:</label>
+    <select id="product" #product>
+      <option *ngFor="let p of productList" [value]="p">{{ p }}</option>
+    </select>
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" #quantity min="1" />
+    <button (click)="addProduct(product.value, +quantity.value)">Add</button>
+    <button (click)="selectOrder()">Select Order</button>
+  </div>
+  

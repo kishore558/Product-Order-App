@@ -1,0 +1,6 @@
+<div class="app-container">
+  <h1>Product Order Application</h1>
+  <app-product-grid (orderSelected)="updateOrder($event)"></app-product-grid>
+  <button class="btn btn-primary" (click)="showOrder = true">Show Order</button>
+  <app-order-summary *ngIf="showOrder" [order]="order"></app-order-summary>
+</div>

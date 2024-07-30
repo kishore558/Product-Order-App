@@ -1,0 +1,19 @@
+<div *ngIf="order.length > 0">
+    <h3>Order Summary</h3>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Product Name</th>
+          <th scope="col">Quantity</th>̥
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of order">
+          <td>{{ item.product }}</td>
+          <td>{{ item.quantity }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="btn btn-info" (click)="readOrder()">What is my Order?</button>
+  </div>
+  

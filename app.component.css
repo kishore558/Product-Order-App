@@ -1,0 +1,24 @@
+/* Set the body background image and color */
+body {
+    background: url("pic/images1.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    background-color: skyblue;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Center align text */
+  h1, h2, h3, h4, h5, h6, p {
+    text-align: center;
+    color: white;
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add a transparent overlay to improve text readability */
+  }
+  
